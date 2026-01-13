@@ -3,45 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DE BLACK | Офіційний сайт</title>
+<title>DE BLACK | Офіційний магазин</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<nav>
+<nav class="navbar">
 <div class="logo">DE BLACK</div>
-<ul>
-<li><a href="#">МАГАЗИН</a></li>
-<li><a href="#">ДРОПИ</a></li>
-<li><a href="#">ПРО НАС</a></li>
+<ul class="nav-links">
+<li><a href="#shop">Магазин</a></li>
+<li><a href="#drops">Дропи</a></li>
+<li><a href="#about">Про нас</a></li>
 </ul>
-<div class="cart">КОШИК (0)</div>
+<div class="cart-icon">
+<a href="#">Кошик (0)</a>
+</div>
 </nav>
 </header>
 
-<main>
 <section class="hero">
-<div class="hero-content">
-<h1>NEW DROP</h1>
-<p>Естетика темряви у кожній деталі.</p>
-<a href="#products" class="btn">ПЕРЕГЛЯНУТИ КОЛЕКЦІЮ</a>
+<div class="hero-text">
+<h1>DE BLACK</h1>
+<p>Streetwear & Minimalist Aesthetics</p>
+<a href="#shop" class="cta-button">Купити зараз</a>
 </div>
 </section>
 
-<section id="products" class="product-grid">
+<section id="shop" class="products">
+<h2>Нові надходження</h2>
+<div class="product-grid">
 <div class="product-card">
-<div class="product-img"></div>
-<h3>OVERSIZE HOODIE "DE BLACK"</h3>
-<p>2400 UAH</p>
+<img src="hoodie.jpg" alt="DE BLACK Hoodie">
+<h3>Oversize Hoodie</h3>
+<p>2400 грн</p>
+<button class="buy-btn">Додати в кошик</button>
 </div>
+
 <div class="product-card">
-<div class="product-img"></div>
-<h3>SIGNATURE SOCKS</h3>
-<p>350 UAH</p>
+<img src="tshirt.jpg" alt="DE BLACK Tshirt">
+<h3>Graphic T-shirt</h3>
+<p>1200 грн</p>
+<button class="buy-btn">Додати в кошик</button>
+</div>
 </div>
 </section>
-</main>
+
+<footer>
+<p>&copy; 2024 DE BLACK. Всі права захищені.</p>
+</footer>
 
 </body>
 </html>
