@@ -4,7 +4,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DE BLACK | Офіційний магазин</title>
-<link rel="stylesheet" href="style.css">
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.product-card {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    background: #0a0a0a;
+}
+
+.buy-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
 </head>
 <body>
 
