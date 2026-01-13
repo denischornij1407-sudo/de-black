@@ -1,126 +1,181 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DE BLACK | Офіційний магазин</title>
-<style>
-  body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Helvetica', sans-serif;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    border-bottom: 1px solid #1a1a1a;
-  }
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-  }
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  .hero {
-    text-align: center;
-    padding: 80px 20px;
-  }
-  .hero h1 {
-    font-size: 60px;
-    margin: 0;
-  }
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 40px 5%;
-  }
-  .product-card {
-    text-align: center;
-    border: 1px solid #1a1a1a;
-    padding: 20px;
-    background: #050505;
-  }
-  .product-card img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    background: #0a0a0a;
-    display: block;
-    margin: 0 auto 15px;
-  }
-  .buy-btn {
-    background: #fff;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE BLACK | Офіційний магазин</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Helvetica', Arial, sans-serif;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #888;
+        }
+
+        .cart-icon {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .tg-link {
+            color: #24A1DE !important;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 80px);
+            margin: 0;
+            letter-spacing: 10px;
+        }
+
+        .hero p {
+            color: #888;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 40px 5%;
+        }
+
+        .product-card {
+            text-align: center;
+            background: #050505;
+            padding: 30px;
+            border: 1px solid #111;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            border-color: #333;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin: 15px 0 5px;
+        }
+
+        .price {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .buy-btn {
+            background: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background: #cccccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: #333;
+            font-size: 10px;
+            border-top: 1px solid #1a1a1a;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-<nav class="navbar">
-<div class="logo">DE BLACK</div>
-<ul class="nav-links">
-<li><a href="#shop">Магазин</a></li>
-<li><a href="#drops">Дропи</a></li>
-<li><a href="#about">Про нас</a></li>
-</ul>
-<div class="cart-icon">
-<div class="cart-icon">
-    <a href="https://t.me/deniska1407" target="_blank" class="tg-link">TELEGRAM</a>
-    <span style="margin: 0 10px;">|</span>
-    <a href="#">Кошик (0)</a>
-</div>
-</div>
-</nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">DE BLACK</div>
+            
+            <ul class="nav-links">
+                <li><a href="#shop">Магазин</a></li>
+                <li><a href="#">Дропи</a></li>
+                <li><a href="#">Про нас</a></li>
+            </ul>
 
-<section class="hero">
-<div class="hero-text">
-<h1>DE BLACK</h1>
-<p>Streetwear & Minimalist Aesthetics</p>
-<a href="#shop" class="cta-button">Купити зараз</a>
-</div>
-</section>
+            <div class="cart-icon">
+                <a href="https://t.me/твій_логін" target="_blank" class="tg-link">TELEGRAM</a>
+                <span style="color: #333;">|</span>
+                <a href="#" style="color: #fff; text-decoration: none; margin-left: 15px;">КОШИК (0)</a>
+            </div>
+        </nav>
+    </header>
 
-<section id="shop" class="products">
-<h2>Нові надходження</h2>
-<div class="product-grid">
-<div class="product-card">
-<img src="https://r.jina.ai/i/664366e66c7b415da07c576563605c31" alt="DE BLACK Hoodie">
-<h3>Oversize Hoodie</h3>
-<p>2400 грн</p>
-<button class="buy-btn">Додати в кошик</button>
-</div>
+    <section class="hero">
+        <h1>DE BLACK</h1>
+        <p>Streetwear & Minimalist Aesthetics</p>
+    </section>
 
-<div class="product-card">
-<img src="https://r.jina.ai/i/664366e66c7b415da07c576563605c31" alt="DE BLACK Tshirt">
-<h3>Graphic T-shirt</h3>
-<p>1200 грн</p>
-<button class="buy-btn">Додати в кошик</button>
-</div>
-</div>
-</section>
+    <section id="shop">
+        <h2 style="text-align: center; font-size: 14px; color: #555;">НОВІ НАДХОДЖЕННЯ</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://r.jina.ai/i/664366e66c7b415da07c576563605c31" alt="DE BLACK Hoodie">
+                <h3>Oversize Hoodie</h3>
+                <p class="price">2400 грн</p>
+                <button class="buy-btn">Додати в кошик</button>
+            </div>
 
-<footer>
-<p>&copy; 2024 DE BLACK. Всі права захищені.</p>
-</footer>
-
-</body>
-</html>
+            <div class="product-card">
+                <img src="https://r.jina.ai/i/664366e66c7b415da07c576563605c31" alt="DE BLACK Tshirt" style="filter: brightness(0.6);">
+                <h3>Graphic T-shirt</h3>
+                <p class="
